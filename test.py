@@ -1,16 +1,24 @@
 #!/usr/bin/python
-import os
+#import os
 #import datetime
 #import numpy
-import re
-import argparse
+#import re
+#import argparse
+
+#1/11/2020 Update to Python 3
 
 def isAnagram(word):
     for i in range(len(word)):
-        print word[i] + ' ' + word[len(word)-1-i]
+        
+        if(len(word) == 1):
+            return True
+        
+        print(word[i] + ' ' + word[len(word)-1-i])
+        print("Hi there")
         if word[i] != word[len(word)-1-i]:
             return False
-    return True
+        else:
+            return True
 
 if __name__== "__main__":
-    print isAnagram("mom")
+    print(isAnagram("mom"))
