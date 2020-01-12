@@ -1,15 +1,15 @@
 #!/usr/bin/python
-import os
+#import os
 #import datetime
 #import numpy
-import re
-import argparse
+#import re
+#import argparse
 
-def isAnagram(word):
-    if word == word[::-1]:
-        return True
-    return False
+#1/11/2020 Update to Python 3
+
+def isPalindrome(word):
+    return word == word[::-1]
 
 if __name__== "__main__":
-    print isAnagram("mom")
-    print isAnagram("watermellon")
+    print(isPalindrome("mom"))
+    print(isPalindrome("watermelon"))
